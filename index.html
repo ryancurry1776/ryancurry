@@ -18,6 +18,9 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!--Particles-->
+    <link href="css/particles.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/full-slider.css" rel="stylesheet">
     <link href="css/addons.css" rel="stylesheet">
@@ -69,7 +72,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('img/profile.jpg')">
+          <div class="carousel-item active" id='first-slide-jqueryLoad' style="background-image: url('img/profile.jpg')">
             <div class="overlay"></div>
             <div class="carousel-caption d-none d-md-block">
               <h3>Phonecian Wall</h3>
@@ -77,7 +80,7 @@
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('img/f9.jpg')">
+          <div class="carousel-item" id='second-slide-jqueryLoad' style="background-image: url('img/bay.jpg')">
             <div class="overlay"></div>
             <div class="carousel-caption d-none d-md-block">
               <h3>Byblos Bay</h3>
@@ -85,7 +88,7 @@
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('img/f26.jpg')">
+          <div class="carousel-item" id='third-slide-jqueryLoad' style="background-image: url('img/forest.jpg')">
             <div class="overlay"></div>
             <div class="carousel-caption d-none d-md-block">
               <h3>Cedar Forest</h3>
@@ -151,6 +154,7 @@
 
     <div id="preloader">
       <div class="pulse" style=""></div>
+      <div id="particles"></div>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -160,8 +164,15 @@
     <!-- Custom scripts from blog template -->
     <script src="js/clean-blog.min.js"></script>
 
+    <!-- Wait For Images -->
+    <script src="js/jquery.waitforimages.min.js"></script>
+
     <!-- Loader -->
     <script src="js/loader.js"></script>
+
+    <!-- Particle for loader -->
+    <script type='text/javascript' src='js/jquery.particleground.js'></script>
+    <script type='text/javascript' src='js/demo.js'></script>
 
   </body>
 
