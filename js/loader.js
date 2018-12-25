@@ -15,4 +15,5 @@ $('body')
 
 $(window).on('load', function() {
   $('#preloader').delay(300).fadeOut(1000);
+  $('#bodyshown').css('overflow', 'visible')
 });
