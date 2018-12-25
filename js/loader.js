@@ -14,6 +14,6 @@ $('body')
 }, $.noop, true);
 
 $(window).on('load', function() {
-  $('#preloader').delay(300).fadeOut(1000);
+  $('#preloader').delay(300).fadeOut();
   $('#bodyshown').css('overflow', 'visible')
 });
